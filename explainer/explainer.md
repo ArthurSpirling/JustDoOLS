@@ -14,9 +14,13 @@ So, for example, we might train an election predicting model on US presidential 
 
 **tl;dr: machine learning is about prediction. Machine learning models can automatically try all sorts of relationships between inputs and outcomes in an effort to forecast well---these include models we would never have thought of**
 
-## 2. Supervised learning in Political Science
+## 2. Intrinsic Dimension in Political Science
 
 How is this working out?  Thinking broadly, machine learning has revolutionized science. We see it everywhere: from image analysis to geology to medicine to physics.  A special class of complicated models called (neural) nets has been particularly successful, and a related field of "[deep learning](https://www.nature.com/articles/nature14539)" has grown up around them. Many of the breakthroughs we see today in "Artificial Intelligence" and "Large Language Models" are based on those techniques.
 
-What about in social science?  Here the news is less positive.  
+What about in political science?  Here the news is less positive.  There have been many papers that use "machine learning" but it is typically in an *unsupervised* setting, like topic models.  There the researcher believes there is some hidden structure in the data---say, documents---and the machine tries to find that structure.  It is then the researcher's job to say what that structure is, exactly---what the clusters represent, or what the dimensions of debate are.  The goal is not *prediction* of anything.  
+
+Where political and other social scientists *have* used machine learning for prediction, the results have been mixed. This is perhaps best exemplified in a 2020 paper by [Salganik et al](https://www.pnas.org/doi/10.1073/pnas.1915006117).  For that paper, many different teams tried to predict life outcomes for children in a large data set.  Two results stood out: 
+1. none of the predictions were very good.
+2. no one could beat simple models. 
 
