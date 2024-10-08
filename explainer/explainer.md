@@ -16,6 +16,7 @@ So, for example, we might train an election predicting model on US presidential 
 
 Different researchers will use different machines that combine the data in different ways and thus they will have different predictions, but we can judge them by seeing which is closest to the truth---for example, one of the Global Warming Projections in the figure will be better than the others. 
 <img align="right" src="warming.jpg" width=240 title="Predicting Warming"> 
+
 **tl;dr: machine learning is about prediction. Machine learning models can automatically try all sorts of relationships between inputs and outcomes in an effort to forecast well---these include models we would never have thought of**
 
 ## 2. Prediction in Political Science
