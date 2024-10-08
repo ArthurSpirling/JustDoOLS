@@ -1,6 +1,10 @@
 # Why Simple Models Almost Always Work Best: Non-Technical Explainer
 
-Our paper has some technical elements, though the underlying ideas are straightforward. Here we give a non-technical account of our claims and our evidence for those claims.  The intended audience is one of social scientists who are potentially unfamiliar with recent developments in machine learning---especially "deep learning". Below each section you will find a "too long, didn't read" summary. 
+Our paper has some technical elements, though the underlying ideas are straightforward. Here we give a non-technical account of our claims and our evidence for those claims.  The intended audience is one of social scientists who are potentially unfamiliar with recent developments in machine learning---especially "deep learning". Below each section you will find a "too long, didn't read" summary. If you want something even shorter, our paper shows
+
+1. that the intrinsic dimension of political datasets is low.  What we mean by this is that our data are fundamentally quite simple and have highly structured relationships between the variables.  As a result, complex machine learning models have nothing to "get hold of" and thus they don't do particularly well on our prediction problems.
+2. that this occurs due to something we call "data curation".  This is the process by which researchers gather limited numbers and types of variables in a way that have straightforward (if any) relationships with the outcome.
+3. given 1 and 2, the way forward for machine learning in political science is more complex, raw and unstructured data like audio, video, text and images. 
 
 ## 1. Machine Learning and Prediction
 
