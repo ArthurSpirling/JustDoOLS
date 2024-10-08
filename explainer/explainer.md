@@ -89,7 +89,7 @@ What we see is that (a) complex machine learning models---i.e. those with lots o
 
 In the second half of the paper we argue that political science datasets are inhospitable for complex machine learning because of the way they are gathered.  In particular, we think that researchers have cognitive and financial limits when they put together *X* variables to predict some target *Y*.  That is, it is simply costly---in money terms or in terms of thinking about all the various possible causes and correlates---to get the sort of data for which machine learning "works" so well.  
 
-One specific point we make here is that, in contrast to something like the image prediction problem above, political scientists typically have **tabular data**.  That is, data where the rows are observations, and the columns are various (often highly coarsened, censored, truncated) covariates recorded for those observations.  For example, a dataset of 50 states might have rows that look like this:
+One specific point we make here is that, in contrast to something like the image prediction problem above, political scientists typically have **tabular data**.  That is, data where the rows are observations, and the columns are various (often highly coarsened, censored, truncated) covariates recorded for those observations.  For example, a dataset of 50 states might have some rows and some columns that look like this:
 
 | State  | turnout04 | unemployment | percent foreign born |
 | ------------- | ------------- | ------------- | ------------- | 
@@ -98,5 +98,16 @@ One specific point we make here is that, in contrast to something like the image
 | New Jersey  | 59.92 | 4.8   | 23.4|
 
 But the types of data where machine learning does well are *non* tabular cases where information is stored in a more basic "raw" format, not in columns and rows.  For example, audio or video data has this form. 
+
+In our paper, we give some technical results where we think about a case where *Y* (the outcome) is a product of some variables **X** and **Z**.  In particular, the "true" situation is 
+
+
+<p align="center">
+Y =  f(**X**) + g(**Z**)+ error
+</p>
+
+but the researcher does not know the functions *f* or *g*.  We go through various scenarios, but the simplest one is where **X** and **Z** are uncorrelated.  In this case, the researcher can find themselves in a situation where they gather data about **X**, fit a potentially simple model to it (the *f* part) and never realize they are missing **Z**.  It doesn't matter how much they increase the complexity of *f* (i.e. how deep the neural net they try), they can never do better than a simple model. 
+
+
 
 ## 5. So What?  Advice to Practitioners
