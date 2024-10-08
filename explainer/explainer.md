@@ -53,9 +53,9 @@ There were around 650 members of parliament, and they were almost all either in 
 ### Finding the Intrinsic Dimension
 
 How can we know exactly what the intrinsic dimension of a dataset is?  The basic idea is to fit a very complicated model with lots of parameters (looking for lots of 'effects'), and then try a model with fewer parameters (looking for fewer 'effects'), and keep reducing the number.  When you get to a low enough parameter number that the model starts fiting poorly---meaning it doesn't predict very well relative to the model with many many parameters, you have found the intrinsic dimension.  Unsurprisingly, the details are more technical than this, and involve something called **random subspace training** invented by [Li et al (2018)](https://arxiv.org/abs/1804.08838). And in practice, one fits arbirtarily complex model called a [deep neural network](https://news.mit.edu/2017/explained-neural-networks-deep-learning-0414) to predict the outcome.  As we mentioned above, these models combine the variables available to them in complex ways that make for accurate predictions in many fields.  Importantly, we can compare across models with different numbers of parameters easily: for instance, a model with 100000 parameters is "twice" as complex as one with 5000, which is "twice" as complex as one with 2500 and so on. 
-
-### CIFAR as a Baseline
 <img align="right" src="cifar_results.jpg" width=120 title="Intrinsic Dimension of CIFAR">
+### CIFAR as a Baseline
+
 
 So what do we see? Well first, we need a baseline to compare results to.  We use the [CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar.html) dataset for that.  This is a 60000 images in 10 classes.  Those classes are things like airplanes, cars, cats, dogs, horses and so on.  
 
