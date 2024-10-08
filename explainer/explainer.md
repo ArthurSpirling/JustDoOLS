@@ -1,4 +1,4 @@
-# Why Simple Models Almost Always Work Best: A Non-Technical Explainer
+# Why Simple Models Almost Always Work Best: Non-Technical Explainer
 
 Our paper has some technical elements, though the underlying ideas are straightforward. Here we give a non-technical account of our claims and our evidence for those claims.  The intended audience is one of social scientists who are potentially unfamiliar with recent developments in machine learning---especially "deep learning". Below each section you will find a "too long, didn't read" summary. 
 
