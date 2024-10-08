@@ -75,6 +75,8 @@ conflict, 0 if it is at peace."
 - **Civil War**: the original data is from [Muchlinski et al](https://www.jstor.org/stable/24573207), though our source was [Colaresi & Mahmood (2017)](https://journals.sagepub.com/doi/full/10.1177/0022343316682065).  The problem is to "forecast the binary observation of the presence or absence of a civil war onset". 
 - **Fragile Families** from Salganik et al (2020), as described above.  There are three (binary) targets to predict: (household) Eviction, (primary caregiver) job training, (primary caregiver) layoff.
  
+Starting on the left with the CIFAR data, here are our results: 
 
+<img align="center" src="main_results.jpg" width=240 title="Political Science Intrinsic Dimension"> 
 
 
