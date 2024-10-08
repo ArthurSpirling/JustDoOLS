@@ -114,8 +114,13 @@ $$
 Y = 1 + 0.2x_1 + 
 \frac{1}{ 1+ \exp( -6( \frac{x_1\times x_2}{\sqrt{2}} )  - \frac{1}{3}) } + \epsilon
 $$
+<img align="right" src="xy3d.jpg" width=200 title="uncurated Data">
+If we plot *Y* and *X*<sub>1</sub> and  *X*<sub>2</sub> we get something like the colorful plot to the right.  But the problem is that the researcher is unaware of  *X*<sub>2</sub> or doesn't care about it, or can't afford to collect it.  
+<img align="right" src="xy_linear.jpg" width=200 title="Curated Data">
+In that case, they end up modeling *Y* as a function of *X*<sub>1</sub> *only*.  Now their plot looks like the 2D figure.  They may suspect something non-linear is going on, but actually a linear regression works "fine" insofar as it gives rise to a statistically significant predictor, and the model fit (the *R*<sup>2</sup>) is quite high by social science prediction standards (25%).
 
-If we plot *Y* and *X*<sub>1</sub> and  *X*<sub>2</sub> we get something like the colorful plot to the right.  But the problem is that the researcher is unaware of  *X*<sub>2</sub> or doesn't care about it, or can't afford to collect it.  In that case, they end up modeling *Y* as a function of *X*<sub>1</sub> *only*.  Now their plot looks like the 2D figure.  They may suspect something non-linear is going on, but actually a linear regression works "fine" insofar as it gives rise to a statistically significant predictor, and the model fit (the *R*<sup>2</sup>) is quite high by social science prediction standards (25%).
+### A Typology of Problems
 
+**tl;dr: political science datasets are highly curated.  Thus complex machine learning models cannot improve over simpler options**
 
 ## 5. So What?  Advice to Practitioners
