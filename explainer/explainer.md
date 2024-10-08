@@ -87,4 +87,16 @@ What we see is that (a) complex machine learning models---i.e. those with lots o
 
 ## 4. Why is Intrinsic Dimension so low?  Data Curation.
 
+In the second half of the paper we argue that political science datasets are inhospitable for complex machine learning because of the way they are gathered.  In particular, we think that researchers have cognitive and financial limits when they put together *X* variables to predict some target *Y*.  That is, it is simply costly---in money terms or in terms of thinking about all the various possible causes and correlates---to get the sort of data for which machine learning "works" so well.  
 
+One specific point we make here is that, in contrast to something like the image prediction problem above, political scientists typically have **tabular data**.  That is, data where the rows are observations, and the columns are various (often highly coarsened, censored, truncated) covariates recorded for those observations.  For example, a dataset of 50 states might have rows that look like this:
+
+| State  | turnout04 | unemployment | percent foreign born |
+| ------------- | ------------- | ------------- | ------------- | 
+| Nebraska | 58.02  | 3.8  | 7.4|
+| New Hampshire  | 71.6  | 3.7   | 6.4|
+| New Jersey  | 59.92 | 4.8   | 23.4|
+
+But the types of data where machine learning does well are *non* tabular cases where information is stored in a more basic "raw" format, not in columns and rows.  For example, audio or video data has this form. 
+
+## 5. So What?  Advice to Practitioners
