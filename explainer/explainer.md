@@ -106,8 +106,18 @@ In our paper, we give some technical results where we think about a case where *
 Y =  f(X) + g(Z)+ error
 </p>
 
-but the researcher does not know the functions *f* or *g*.  We go through various scenarios, but the simplest one is where **X** and **Z** are uncorrelated.  In this case, the researcher can find themselves in a situation where they gather data about **X**, fit a potentially simple model to it (the *f* part) and never realize they are missing **Z**.  It doesn't matter how much they increase the complexity of *f* (i.e. how deep the neural net they try), they can never do better than a simple model. 
+but the researcher does not know the functions *f* or *g*.  We go through various scenarios, but the simplest one is where **X** and **Z** are uncorrelated.  In this case, the researcher can find themselves in a situation where they gather data about **X**, fit a potentially simple model to it (the *f* part) and never realize they are missing **Z**.  It doesn't matter how much they increase the complexity of *f* (i.e. how deep the neural net they try), they can never do better than a simple model even though the *true* data generating process that gave them the values of *Y* they saw was very complex.
 
+A toy example may drive this logic home.  Suppose that the "true" data generating process is this (complicated) function: 
+
+$$
+Y = 1 + 0.2x_1 + 
+\frac{1}{ 1+ \exp( -6( \frac{x_1\times x_2}{\sqrt{2}} )  - \frac{1}{3}) } + \epsilon
+$$
+
+```math
+a^2+b^2=c^2
+```
 
 
 ## 5. So What?  Advice to Practitioners
