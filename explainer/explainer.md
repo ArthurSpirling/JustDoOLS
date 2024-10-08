@@ -108,19 +108,18 @@ Y =  f(X) + g(Z)+ error
 
 but the researcher does not know the functions *f* or *g*.  We go through various scenarios, but the simplest one is where **X** and **Z** are uncorrelated.  In this case, the researcher can find themselves in a situation where they gather data about **X**, fit a potentially simple model to it (the *f* part) and never realize they are missing **Z**.  It doesn't matter how much they increase the complexity of *f* (i.e. how deep the neural net they try), they can never do better than a simple model even though the *true* data generating process that gave them the values of *Y* they saw was very complex.
 
-A toy example may drive this logic home.  Suppose that the "true" data generating process is this (complicated) function: 
 <img align="right" src="xy3d.jpg" width=200 title="uncurated Data">
+A toy example may drive this logic home.  Suppose that the "true" data generating process is this (complicated) function: 
+
+
 $$
 Y = 1 + 0.2x_1 + 
 \frac{1}{ 1+ \exp( -6( \frac{x_1\times x_2}{\sqrt{2}} )  - \frac{1}{3}) } + \epsilon
 $$
 
 
-If we plot *Y* and *X*<sub>1</sub> and  *X*<sub>2</sub> we get something like the colorful plot to the right.  But the problem is that the researcher is unaware of  *X*<sub>2</sub> or doesn't care about it, or can't afford to collect it.  
-
+If we plot *Y* and *X*<sub>1</sub> and  *X*<sub>2</sub> we get something like the colorful plot to the right.  But the problem is that the researcher is unaware of  *X*<sub>2</sub> or doesn't care about it, or can't afford to collect it.  In that case, they end up modeling *Y* as a function of *X*<sub>1</sub> *only*.  Now their plot looks like the 2D figure.  They may suspect something non-linear is going on, but actually a linear regression works "fine" insofar as it gives rise to a statistically significant predictor, and the model fit (the *R*<sup>2</sup>) is quite high by social science prediction standards (25%).
 <img align="right" src="xy_linear.jpg" width=200 title="Curated Data">
-
-In that case, they end up modeling *Y* as a function of *X*<sub>1</sub> *only*.  Now their plot looks like the 2D figure.  They may suspect something non-linear is going on, but actually a linear regression works "fine" insofar as it gives rise to a statistically significant predictor, and the model fit (the *R*<sup>2</sup>) is quite high by social science prediction standards (25%).
 
 ### A Typology of Problems
 
