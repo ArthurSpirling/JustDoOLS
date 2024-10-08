@@ -69,8 +69,13 @@ What about for political science data?  Does show a similar return to complex mo
 
 In a word: no.  We looked at a set of datasets which have appeared in our top journals in the context of machine learning models.  They were: 
 
-
-
+-  **American Politics**: the original data is from [Blackwell (2013)](https://onlinelibrary.wiley.com/doi/10.1111/j.1540-5907.2012.00626.x), though our source was [Montgomery & Olivella (2018)](https://onlinelibrary.wiley.com/doi/10.1111/ajps.12361). The problem is to predict "whether a Democratic candidate has "gone negative" in a given week" of a campaign, for both incumbents and non-incumbents in US elections.
+-  **Political Instability**: the original data is from [Goldstone et al (2010)](https://onlinelibrary.wiley.com/doi/full/10.1111/j.1540-5907.2009.00426.x). The problem is to forecast political instability, which can assume many forms including "the onsets of both violent civil wars and nonviolent democratic reversals".
+-  **International Conflict**: the original data is from [Beck et al (2000)](https://www.jstor.org/stable/pdf/2586378.pdf).  The problem is to predict a binary variable coded as 1 if a state is "engaged in an international
+conflict, 0 if it is at peace." 
+- **Civil War**: the original data is from [Muchlinski et al](https://www.jstor.org/stable/24573207), though our source was [Colaresi & Mahmood (2017)](https://journals.sagepub.com/doi/full/10.1177/0022343316682065).  The problem is to "forecast the binary observation of the presence or absence of a civil war onset". 
+- **Fragile Families** from Salganik et al (2020), as described above.  There are three (binary) targets to predict: (household) Eviction, (primary caregiver) job training, (primary caregiver) layoff.
+ 
 
 
 
