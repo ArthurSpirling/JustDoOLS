@@ -61,7 +61,11 @@ The idea is to train machine learning models on 50000 of the images (their pixel
 And the model responds as we would expect---reduced complexity reduces how well it fits, from a very high baseline down to quite poor performance (e.g. accuracy below 10%, when we make only 2500 parameters---exp(8)---or so available). The column figure to the right makes this point: from top to bottom we have accuracy, precision, recall, area under the curve.  The x-axis is the intrinsic dimension (log scale).  
 
 ### Political Science Data
-What about for political science data?  Does show a similar return to complex models?  No. 
+What about for political science data?  Does show a similar return to complex models?  
+
+In a word: no.  We looked at a set of datasets which have appeared in our top journals in the context of machine learning models.  They were: 
+- 
+
 
 
 
