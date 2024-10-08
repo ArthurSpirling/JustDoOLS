@@ -15,7 +15,7 @@ We can evaluate how well the machine has done by checking its accuracy on a set 
 So, for example, we might train an election predicting model on US presidential elections from the following post-war years: 1948, 1956, 1964, ... ,2012, 2020. That is, every second election.  The machine will consider all the variables we have at hand---the prevailing unemployment rate, the inflation rate of the election year, the Fed interest rate etc. It will use them to predict what happened in those elections---say, ``did the Democrat win?".  Then we see how well that model performs on our *test* set: the *X*s and *Y*s for 1952, 1960, 1968, ..., 2008, 2016.  If we think it looks accurate enough, we plug in the *X*s for 2024, and see what it predicts. 
 
 Different researchers will use different machines that combine the data in different ways and thus they will have different predictions, but we can judge them by seeing which is closest to the truth---for example, one of the Global Warming Projections in the figure will be better than the others. 
-<img align="right" src="warming.jpg" width=240 title="Predicting Warming"> 
+<img align="right" src="warming.jpeg" width=240 title="Predicting Warming"> 
 
 **tl;dr: machine learning is about prediction. Machine learning models can automatically try all sorts of relationships between inputs and outcomes in an effort to forecast well---these include models we would never have thought of**
 
