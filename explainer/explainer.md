@@ -77,6 +77,12 @@ conflict, 0 if it is at peace."
  
 Starting on the left with the CIFAR data, here are our results: 
 
-<img align="center" src="main_results.jpg" width=240 title="Political Science Intrinsic Dimension"> 
+<img align="center" src="main_results.jpg" width=550 title="Political Science Intrinsic Dimension"> 
+
+What we see is that (a) complex machine learning models---i.e. those with lots of parameters---often cannot do very well at all. For instance, the rightmost three columns from Salganik et al suggest that even very complex neural nets struggle to do better than 80% accuracy on certain problems.  The second thing we see is that (b) to the extent complex models *can* do well, so can simple ones.  For example, for the American politics, instability and IR conflict data, topline accuracy is acheived with quite basic models---with say exp(4)=55 or exp(6)=400 numbers of parameters.
+
+**tl:dr: political science datasets have low intrinsic dimension; they look fundamentally different to datasets where complex models are able to extract big performance improvements**
+
+## 4. Why is Intrinsic Dimension so low?  Data Curation.
 
 
