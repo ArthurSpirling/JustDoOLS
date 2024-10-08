@@ -64,7 +64,8 @@ And the model responds as we would expect---reduced complexity reduces how well 
 What about for political science data?  Does show a similar return to complex models?  
 
 In a word: no.  We looked at a set of datasets which have appeared in our top journals in the context of machine learning models.  They were: 
-- 
+
+
 
 
 
