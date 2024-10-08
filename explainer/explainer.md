@@ -57,7 +57,7 @@ How can we know exactly what the intrinsic dimension of a dataset is?  The basic
 ### CIFAR as a Baseline
 
 
-So what do we see? Well first, we need a baseline to compare results to.  We use the [CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar.html) dataset for that.  This is a 60000 images in 10 classes.  Those classes are things like airplanes, cars, cats, dogs, horses and so on.  
+So what do we see? Well first, we need a baseline to compare results to.  We use the [CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar.html) dataset for that.  This consists of 60000 images in 10 classes.  Those classes are things like airplanes, cars, cats, dogs, horses and so on.  
 
 
 The idea is to train machine learning models on 50000 of the images (their pixels), and try to correctly predict the airplanes, cars, cats, dogs etc in the test set images.  This is famous and classic problem, and we know from other work that the returns to "big" models---i.e. models with lots of parameters---tend to be excellent.   Reassuringly, that is what we found too.  We started with a deep neural net that had millions of parameters.  It scores very highly on the "usual" performance metrics like [accuracy](https://en.wikipedia.org/wiki/Evaluation_of_binary_classifiers#Single_metrics), [precision and recall](https://en.wikipedia.org/wiki/Precision_and_recall). Then we slowly "back off" the model, reducing the number of parameters available to it to fit the data.  
