@@ -65,10 +65,9 @@ The idea is to train machine learning models on 50000 of the images (their pixel
 And the model responds as we would expect---reduced complexity reduces how well it fits, from a very high baseline down to quite poor performance (e.g. accuracy below 10%, when we make only 2500 parameters---exp(8)---or so available). The column figure to the right makes this point: from top to bottom we have accuracy, precision, recall, area under the curve.  The x-axis is the intrinsic dimension (log scale).  
 
 ### Political Science Data
-What about for political science data?  Does show a similar return to complex models?  
+What about for political science data?  Does show a similar return to complex models?  In a word: **no**.  
 
-In a word: no.  We looked at a set of datasets which have appeared in our top journals in the context of machine learning models.  They were: 
-
+We looked at a set of datasets which have appeared in our top journals in the context of machine learning models.  They were: 
 -  **American Politics**: the original data is from [Blackwell (2013)](https://onlinelibrary.wiley.com/doi/10.1111/j.1540-5907.2012.00626.x), though our source was [Montgomery & Olivella (2018)](https://onlinelibrary.wiley.com/doi/10.1111/ajps.12361). The problem is to predict "whether a Democratic candidate has "gone negative" in a given week" of a campaign, for both incumbents and non-incumbents in US elections.
 -  **Political Instability**: the original data is from [Goldstone et al (2010)](https://onlinelibrary.wiley.com/doi/full/10.1111/j.1540-5907.2009.00426.x). The problem is to forecast political instability, which can assume many forms including "the onsets of both violent civil wars and nonviolent democratic reversals".
 -  **International Conflict**: the original data is from [Beck et al (2000)](https://www.jstor.org/stable/pdf/2586378.pdf).  The problem is to predict a binary variable coded as 1 if a state is "engaged in an international
