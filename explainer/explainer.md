@@ -14,13 +14,25 @@ So, for example, we might train an election predicting model on US presidential 
 
 **tl;dr: machine learning is about prediction. Machine learning models can automatically try all sorts of relationships between inputs and outcomes in an effort to forecast well---these include models we would never have thought of**
 
-## 2. Intrinsic Dimension in Political Science
+## 2. Prediction in Political Science
 
 How is this working out?  Thinking broadly, machine learning has revolutionized science. We see it everywhere: from image analysis to geology to medicine to physics.  A special class of complicated models called (neural) nets has been particularly successful, and a related field of "[deep learning](https://www.nature.com/articles/nature14539)" has grown up around them. Many of the breakthroughs we see today in "Artificial Intelligence" and "Large Language Models" are based on those techniques.
 
 What about in political science?  Here the news is less positive.  There have been many papers that use "machine learning" but it is typically in an *unsupervised* setting, like topic models.  There the researcher believes there is some hidden structure in the data---say, documents---and the machine tries to find that structure.  It is then the researcher's job to say what that structure is, exactly---what the clusters represent, or what the dimensions of debate are.  The goal is not *prediction* of anything.  
 
 Where political and other social scientists *have* used machine learning for prediction, the results have been mixed. This is perhaps best exemplified in a 2020 paper by [Salganik et al](https://www.pnas.org/doi/10.1073/pnas.1915006117).  For that paper, many different teams tried to predict life outcomes for children in a large data set.  Two results stood out: 
-1. none of the predictions were very good.
-2. no one could beat simple models. 
+
+1. none of the predictions were very good. That is, none of the teams were able to predict what *actually* happened to the children very well. 
+2. no one could beat simple models. That is, despite lots of fancy machine learning models being tried, simple approaches like linear regression or logistic regression did best.
+
+This is surprising: we would imagine that the process by which children move through their lives and have various good or bad outcomes is very complicated.  So we would expect models that can cope with potentially very complicated processes would do well---or at least better than simple models. But this general pattern---best predictions aren't very accurate, and simple models do just as well---turns up in lots of political science papers.  The puzzle is *why*.  
+
+**tl:dr: machine learning has been applied to complex political and social processes, but it has struggled: models are often not very accurate, and very simple models often do as well as very complicated ones.**
+
+## 3. Intrinsic Dimension of Political Science Data is Low
+
+Our argument is that political science data has low **intrinsic dimension**.  Basically this means that political science datasets do not have the kind of subtle variation and non-linearities that machine learning models can take advantage of over and above simple models.  This does **not** mean that politics is a simple process: rather, the data *as it arrives to us as researchers* is simple in structure.  Above we gave the example of trying to predict an election.  This might be a complicated problem because the way a particular person votes may depend on their demographic characteristics, plus their economic situation, plus whether they were in a good mood on election day due to the weather etc.  A machine learning model could in principle try many many combinations of these variables, including interactions ("this 45 year old male professor is more likely to vote for the incumbent if the sun is shining, but this 31 year old female one is not").  Our point is that a lot of political science data does not have this sort of high quality, fine grained data.  So it doesn't make much difference whether you use a complex model or not. 
+
+Another way to express the problem is that political science modeling problems are highly **reducible**.  This means that they may initially look very complicated, but in practice you don't need much information to do a pretty good job of predicting what you are trying to predict. 
+
 
