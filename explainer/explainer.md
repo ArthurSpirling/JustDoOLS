@@ -119,7 +119,7 @@ $$
 
 
 If we plot *Y* and *X*<sub>1</sub> and  *X*<sub>2</sub> we get something like the colorful plot to the right.  But the problem is that the researcher is unaware of  *X*<sub>2</sub> or doesn't care about it, or can't afford to collect it.  In that case, they end up modeling *Y* as a function of *X*<sub>1</sub> *only*.  Now their plot looks like the 2D figure.  They may suspect something non-linear is going on, but actually a linear regression works "fine" insofar as it gives rise to a statistically significant predictor, and the model fit (the *R*<sup>2</sup>) is quite high by social science prediction standards (25%).
-<img align="right" src="xy_linear.jpg" width=200 title="Curated Data">
+<img align="right" src="xy_linear.jpg" width=250 title="Curated Data">
 
 ### A Typology of Problems
 
