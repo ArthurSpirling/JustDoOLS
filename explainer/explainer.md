@@ -123,12 +123,14 @@ If we plot *Y* and *X*<sub>1</sub> and  *X*<sub>2</sub> we get something like th
 
 ### A Typology of Problems
 
-In the paper we provide a typology of types of machine learning---that is, data---problems that one can encounter in practice.  The two axes of interest are how "inherently" or "truly" difficult the modeling processes *really* is and then how much noise we can expect when dealing with this type of problem.  By "noise" we mean 
+In the paper we provide a typology of types of machine learning---that is, data---problems that one can encounter in practice.  The two axes of interest are, first, how "inherently" or "truly" difficult the modeling processes *really* is.  Here we mean, essentially, how convoluted and complex the function that takes us from inputs to outcomes is. The second axis is how much noise we can expect when dealing with this type of problem.  By "noise" we mean anything in the data that makes it hard to uncover the true relationship between *X* and *Y* (whether it is truly simple or complex); this could include the usual random variability, but we also mean it in a broader sense to include e.g. variables we would like to have access to but do not, perhaps because they are expensive to obtain.
+
 
 |               |   simple DGP            | complex DGP  | 
 | ------------- | ------------- | ------------- | 
-| Low Noise |   |   | |
-| High Noise  |   |    | |
+| **Low Noise** |   |   | |
+| **High Noise**  |   |    | |
+
 
 
 **tl;dr: political science datasets are highly curated.  Thus complex machine learning models cannot improve over simpler options**
