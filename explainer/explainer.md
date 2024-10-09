@@ -123,6 +123,9 @@ If we plot *Y* and *X*<sub>1</sub> and  *X*<sub>2</sub> we get something like th
 
 ### A Typology of Problems
 
+In the paper we provide a typology of types of machine learning---that is, data---problems that one can encounter in practice.  The two axes of interest are how "inherently" or "truly" difficult the modeling processes *really* is and then how much noise we can expect when dealing with this type of problem.  By "noise" we mean 
+
+
 **tl;dr: political science datasets are highly curated.  Thus complex machine learning models cannot improve over simpler options**
 
 ## 5. So What?  Advice to Practitioners
