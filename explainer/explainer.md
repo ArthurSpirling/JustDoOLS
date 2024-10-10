@@ -128,8 +128,9 @@ In the paper we provide a typology of types of machine learning---that is, data-
 
 |               |   simple DGP            | complex DGP  | 
 | ------------- | ------------- | ------------- | 
-| **Low Noise** |   |   | |
-| **High Noise**  |   |    | |
+| **Low Noise** | (a) Fundamental Relations   | (b) Learnable Problems |
+| **High Noise**  |  (d) Curated Data |   (c) Unlearnable Problems |
+
 
 
 
