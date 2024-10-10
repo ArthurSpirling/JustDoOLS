@@ -36,6 +36,8 @@ Where political and other social scientists *have* used machine learning for pre
 
 This is surprising: we would imagine that the process by which children move through their lives and have various good or bad outcomes is very complicated.  So we would expect models that can cope with potentially very complicated processes would do well---or at least better than simple models. But this general pattern---best predictions aren't very accurate, and simple models do just as well---turns up in lots of political science papers.  The puzzle is *why*.  
 
+Notice that nothing here relies on the argument that complex models are hard to *interpret* relative to e.g. a linear regressin. This is certainly true, and can be a [real concern](https://www.nature.com/articles/s42256-019-0048-x).  But our work proceeds from the more fundamental observation that complex models just don't do very well in the first place. 
+
 **tl:dr: machine learning has been applied to complex political and social processes, but it has struggled: models are often not very accurate, and very simple models often do as well as very complicated ones.**
 
 ## 3. Intrinsic Dimension of Political Science Data is Low
