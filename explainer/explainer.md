@@ -123,7 +123,7 @@ If we plot *Y* and *X*<sub>1</sub> and  *X*<sub>2</sub> we get something like th
 
 ### A Typology of Problems
 
-In the paper we provide a typology of types of machine learning---that is, data---problems that one can encounter in practice.  The two axes of interest are, first, how "inherently" or "truly" difficult the modeling processes *really* is.  Here we mean, essentially, how convoluted and complex the function that takes us from inputs to outcomes is. The second axis is how much noise we can expect when dealing with this type of problem.  By "noise" we mean anything in the data that makes it hard to uncover the true relationship between *X* and *Y* (whether it is truly simple or complex); this could include the usual random variability, but we also mean it in a broader sense to include e.g. variables we would like to have access to but do not, perhaps because they are expensive to obtain.
+In the paper we provide a typology of types of machine learning---that is, data---problems that one can encounter in practice.  The two axes of interest are, first, how "inherently" or "truly" difficult the modeling processes *really* is.  Here we mean, essentially, how convoluted and complex the function that takes us from inputs to outcomes is (the Data Generating Process, or DGP). The second axis is how much noise we can expect when dealing with this type of problem.  By "noise" we mean anything in the data that makes it hard to uncover the true relationship between *X* and *Y* (whether it is truly simple or complex); this could include the usual random variability, but we also mean it in a broader sense to include e.g. variables we would like to have access to but do not, perhaps because they are expensive to obtain.
 
 
 |               |   simple DGP            | complex DGP  | 
@@ -131,6 +131,13 @@ In the paper we provide a typology of types of machine learning---that is, data-
 | **Low Noise** | (a) Fundamental Relations   | (b) Learnable Problems |
 | **High Noise**  |  (d) Curated Data |   (c) Unlearnable Problems |
 
+There are four broad scenarios here: 
+- (a) Fundamental Relations: these are scenarios where simple models perform well, and there is no "extra" return to complex ones. Basic physics or engineering systems have this form.  For example, predicting the boiling point of water based on altitute.  This relationship is well known, easy to accurately predict and is linear (the boiling point falls by a constant amount with every 1000 feet up we go).
+- (b) Learnable Problems: these are scenarios where simple models do poorly, but complex ones can make progress.  Problems that have been solved using complex models on high dimensional "raw" data have this form.  For example, using neural nets to learn whether a photo is of a cat or a dog.
+- (c) Unlearnable Problems: these are scenarios where the the DGP is very complicated, but noise is very high: for example, predicting someone's exact happiness or dating success on a given day.  This is something that involves very hard to measure quantities, but is also just inherently hard to model---not least because there are strategic/interactive effects of relationships with other agents (observations). Complex models do slightly better than simple ones, but neither does especially well.
+- (d) **Curated Data**: this is the scenario we think is most common in political science.  Researchers "start out" theoretically with a problem that is truly in box (c): predicting war or unemployment or sports results or something else very difficult.  But they gather limited, highly coarsened data that pushes them over to box (d), but keeps the noise approximately the same.  So no models do well, and complex models make no improvements over simple ones (there is nothing for the complex models to do).
+
+  
 
 
 
