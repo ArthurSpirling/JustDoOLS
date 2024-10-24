@@ -6,3 +6,7 @@ Paper and related materials for [Morucci](https://marcomorucci.com/bio/) and [Sp
 
 
 You can find the working paper [here](https://arthurspirling.org/documents/MorucciSpirling_JustDoOLS.pdf) and a non-technical explainer [here](https://github.com/ArthurSpirling/JustDoOLS/blob/main/explainer/explainer.md).
+
+Shortly, we will release [`PyTorch`](https://pytorch.org/) code that can be used for the purposes we describe in the paper.  Watch this space!
+
+Comments welcome: please send us an email, or open an issue above. 
